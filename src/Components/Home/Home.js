@@ -7,6 +7,7 @@ import styles from './Home.module.css'
 import MovieCard from '../Common/MovieCard/MovieCard';
 import { Link } from 'react-router-dom';
 import Pages from '../Common/Pagination/Pagination';
+import Loader from '../Common/Loader/Loader';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -18,6 +19,7 @@ export default function Home() {
     const [allMovieData, setAllMovieData] = useState([]);
     const [movie, setMovie] = useState(undefined);
     const [currentPage, setCurrentPage] = useState(1)
+    const [isLoaded, setIsLoaded] = useState(true);
 
     let timeout;
     let currentValue;
@@ -49,7 +51,10 @@ export default function Home() {
                     // handle error
                     setError(error)
                 })
-                .finally(response => setIsMovieFetched(true))
+                .finally(response => {
+                    setIsMovieFetched(true)
+                    setIsLoaded(true)
+                })
         }
 
         timeout = setTimeout(fetchMovies, 600);
@@ -78,12 +83,16 @@ export default function Home() {
 
     // Pagination
     const pageChange = pageNumber => {
+        setIsLoaded(false)
         setCurrentPage(pageNumber)
         onSearchMovie(movie, pageNumber, data => setAllMovieData(data));
     };
 
     if (error) {
         return <Error error={error} />;
+    }
+    else if (!isLoaded) {
+        return <Loader />;
     }
     else {
         return (
