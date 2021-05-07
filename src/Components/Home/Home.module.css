@@ -1,0 +1,100 @@
+.centered {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centeredError {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title{
+    padding: 25px;
+    text-align: center;
+}
+.btn{
+    color: white;
+    background-color: black;
+}
+.cardGrid{
+    margin-top: 120px;
+    padding: 20px;
+}
+.textDeco{
+    text-decoration: none !important;
+    color: black !important;
+    font-family: 'Lato';
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cardGrid{
+        margin-top: 90px;
+    }
+    .centered {
+        top: 15%;
+    }
+    .centeredError {
+        top: 23%;
+    }
+    .title{
+        padding: 25px;
+        text-align: center;
+    }
+ }
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .cardGrid{
+        margin-top: 90px;
+    }
+    .centered {
+        top: 12%;
+    }
+    .centeredError {
+        top: 17%;
+    }
+    .title{
+        padding: 25px;
+        /* margin-top: 20px; */
+        text-align: center;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 769px) {
+    .cardGrid{
+        margin-top: 110px;
+    }
+    .centered {
+        top: 10%;
+    }
+    .centeredError {
+        top: 17%;
+    }
+    .title{
+        padding: 25px;
+        text-align: center;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 1025px) {
+    .cardGrid{
+        margin-top: 120px;
+    }
+    .centered {
+        top: 12%;
+    }
+    .centeredError {
+        top: 18%;
+    }
+    .title{
+        padding: 20px;
+        margin-top: 0;
+        text-align: center;
+    }
+ }

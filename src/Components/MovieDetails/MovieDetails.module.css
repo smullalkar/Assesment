@@ -1,0 +1,73 @@
+
+.cardPadding{
+    padding: 80px;
+}
+.card{
+    width: 50%;
+    margin-left: 25%;
+}
+.ratings{
+    border: rgb(83, 83, 87) 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(124, 94, 94);
+    color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .cardPadding{
+        padding: 10px 0;
+    }
+ }
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cardPadding{
+        padding: 20px 0;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 769px) {
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .cardPadding{
+        padding: 30px 0;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 1025px) {
+    .card{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .cardPadding{
+        padding: 40px;
+    }
+ }
+
+ @media only screen and (min-width: 1400px) {
+    .card{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .cardPadding{
+        padding: 80px;
+    }
+ }
+
+.btn{
+    text-align: center;
+    padding: 20px;
+ }
