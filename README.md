@@ -5,6 +5,8 @@ To run the app follow the below instructions :
 3) npm install
 4) npm start
 
+Live Demo deployed on vercel : https://assesment.vercel.app/
+
 Summary : In order to complete this assignment i have used React.js library for ui,
 Ant-d for styling purpose, i have also done some custom styling wherever required,
 react-router for routing purpose, and axios for fetching the api's.
