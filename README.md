@@ -6,6 +6,7 @@ To run the app follow the below instructions :
 4) npm start
 
 Live Demo deployed on vercel : https://assesment.vercel.app/
+Demo Video : https://drive.google.com/drive/folders/10ptPkJm-OG5jXB5-4oZ3gj5mzzyZGaK3?usp=sharing
 
 Summary : In order to complete this assignment i have used React.js library for ui,
 Ant-d for styling purpose, i have also done some custom styling wherever required,
