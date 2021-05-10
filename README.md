@@ -1,7 +1,7 @@
 To run the app follow the below instructions :
 
 1) Just clone repository
-2) cd movieapp
+2) cd Assesment
 3) npm install
 4) npm start
 
